@@ -2,8 +2,16 @@ body {
     background: #ccc;
 }
 
+h1 {
+    text-align: center;
+}
+
 p {
     text-align: center;
+}
+
+#missao {
+    font-size: 20px;
 }
 
 p em strong {
