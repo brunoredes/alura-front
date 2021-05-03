@@ -14,10 +14,14 @@ p {
     text-align: center;
 }
 
-#missao {
+p#missao {
     font-size: 20px;
 }
 
 p em strong {
     color: red;
+}
+
+h2 ul li.itens {
+    font-style: italic;
 }
