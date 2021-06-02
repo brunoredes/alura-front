@@ -28,19 +28,48 @@ nav a {
     text-decoration: none;
 }
 
-/* nav a :hover {} */
+nav a:hover {
+    color: #c78c19;
+    text-decoration: underline;
+}
 
 .products {
     width: 940px;
     margin: 0 auto;
+    padding: 50px 0;
 }
+
 
 .products li {
     display: inline-block;
     text-align: center;
-    width: 33%;
+    width: 30%;
     vertical-align: top;
-    padding: 50px 0;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-color: #000;
+    border-width: 2px;
+    border-style: solid;
+    /**
+    também pode ser dessa forma abaixo:
+     border: 2px solid #000; */
+    border-radius: 8px;
+}
+
+.products li:hover {
+    border-color: #c78c19;
+    transition: 0.5s;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.products li:active {
+    border-color: green;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);;
+}
+
+.products li:hover h2 {
+    font-size: 34px;
 }
 
 .products h2 {
@@ -55,4 +84,5 @@ nav a {
 .price-paragraph {
     font-size: 22px;
     font-weight: bold;
+    margin: 10px 0 0;
 }
