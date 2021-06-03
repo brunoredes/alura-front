@@ -7,10 +7,6 @@
   padding: 30px;
 }
 
-.titulo-principal {
-    padding-left: 20px;
-}
-
 .titulo-centralizado {
   text-align: center;
 }
@@ -27,7 +23,7 @@ p em strong {
   color: red;
 }
 
-h3 + ul .itens {
+h3+ul .itens {
   font-style: italic;
 }
 
