@@ -42,7 +42,6 @@ nav a:hover {
     padding: 50px 0;
 }
 
-
 .products li {
     /* display: inline-block; */
     text-align: center;
@@ -68,7 +67,8 @@ nav a:hover {
 
 .products li:active {
     border-color: green;
-    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    ;
 }
 
 .products li:hover h2 {
@@ -88,4 +88,26 @@ nav a:hover {
     font-size: 22px;
     font-weight: bold;
     margin: 10px 0 0;
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label {
+    display: block;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+form input {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    width: 50%;
 }

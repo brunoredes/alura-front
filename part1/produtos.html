@@ -10,6 +10,7 @@
 
   <link rel="stylesheet" href="styles/reset.css" />
   <link rel="stylesheet" href="styles/header.css" />
+  <link rel="stylesheet" href="styles/footer.css" />
   <link rel="stylesheet" href="styles/produtos.css" />
   <title>Produtos - Barbearia Alura</title>
 </head>
@@ -61,12 +62,3 @@
 </body>
 
 </html>
-
-<script>
-  function formatCurrency() {
-    const priceValue = document.getElementsByClassName('.price-paragraph');
-    const formatedBrlPrice = Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(priceValue);
-    return formatedBrlPrice;
-  }
-  formatCurrency();
-</script>
