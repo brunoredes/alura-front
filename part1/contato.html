@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Barbearia Alura - Contato">
+    <meta name="copyright" content="© 2019 Barbearia Alura" />
+
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/produtos.css" />
-    <title>Produtos - Barbearia Alura</title>
+    <title>Contato - Barbearia Alura</title>
 </head>
 
 <body>
@@ -29,6 +31,21 @@
             </nav>
         </div>
     </header>
+
+    <main>
+        <form>
+            <label for="nameNickname">Nome e Sobrenome</label>
+            <input type="text" name="nameNickname" id="nameNickname" pattern="^[a-z]*$">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" pattern="^[a-z][0-9]*\@[a-z](mail)\.(com|com.br|net|io)$">
+
+            <label for="cellphone">Telefone</label>
+            <input type="text" name="cellphone" id="cellphone" pattern="^(\([1-9]{2}\)9{1}[1-9]{1}[0-9]{7})|(\([1-9]{2}\)[1-9]{1}[0-9]{7})" placeholder="(11)999999999" value="()">
+
+            <input type="submit" value="enviar formulario">
+        </form>
+    </main>
 
     <footer>
         <img src="assets/logo-branco.png" alt="logo-footer">
