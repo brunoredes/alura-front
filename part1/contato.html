@@ -35,15 +35,56 @@
     <main>
         <form>
             <label for="nameNickname">Nome e Sobrenome</label>
-            <input type="text" name="nameNickname" id="nameNickname" pattern="^[a-z]*$">
+            <input type="text" name="nameNickname" id="nameNickname" pattern="^[a-z]*$" class="input-padrao">
 
             <label for="email">Email</label>
-            <input type="email" id="email" pattern="^[a-z][0-9]*\@[a-z](mail)\.(com|com.br|net|io)$">
+            <input type="email" id="email" pattern="^[a-z][0-9]*\@[a-z](mail)\.(com|com.br|net|io)$"
+                class="input-padrao">
 
             <label for="cellphone">Telefone</label>
-            <input type="text" name="cellphone" id="cellphone" pattern="^(\([1-9]{2}\)9{1}[1-9]{1}[0-9]{7})|(\([1-9]{2}\)[1-9]{1}[0-9]{7})" placeholder="(11)999999999" value="()">
+            <input type="text" name="cellphone" id="cellphone"
+                pattern="^\([1-9]{2}\)\ 9{1}[1-9]{1}[0-9]{3}\-[0-9]{4}$" placeholder="(xx) xxxxx-xxxx"
+                class="input-padrao">
 
-            <input type="submit" value="enviar formulario">
+            <label for="textareaMessage">Mensagem</label>
+            <textarea name="" id="textareaMessage" rows="10" class="input-padrao"></textarea>
+
+            <div>
+                <p>
+                    Como prefere o nosso contato?
+                </p>
+
+                <label for="radioEmail">
+                    <input type="radio" name="contato" id="radioEmail" value="email">
+                    Email
+                </label>
+
+                <label for="radioTelefone">
+                    <input type="radio" name="contato" id="radioTelefone" value="telefone">
+                    Telefone
+                </label>
+
+                <label for="radioWhatsapp">
+                    <input type="radio" name="contato" id="radioWhatsapp" value="whatsapp">
+                    Whatsapp
+                </label>
+            </div>
+
+            <div>
+                <p>Qual horário deseja ser atendido?</p>
+                <select name="" id="">
+                    <option value="">Manhã</option>
+                    <option value="">Tarde</option>
+                    <option value="">Noite</option>
+                </select>
+            </div>
+
+            <label class="checkbox">
+                <input type="checkbox">
+                Gostaria de receber nossas novidades por email?
+            </label>
+
+            <input type="submit" value="enviar formulario" id="submitForm">
         </form>
     </main>
 
@@ -54,3 +95,11 @@
 </body>
 
 </html>
+
+<script>
+    function preventForm(event) {
+        event.preventDefault();
+    }
+
+    document.getElementById('submitForm').addEventListener('click', preventForm, true);
+</script>
