@@ -119,3 +119,20 @@ fieldset + fieldset {
 .checkbox {
     margin: 20px 0;
 }
+
+.send-form {
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.send-form:hover {
+    background-color: darkorange;
+    transform: scale(1.05);
+}
