@@ -99,9 +99,13 @@ form {
     margin: 40px 0;
 }
 
-form label {
+form label, form  legend {
     display: block;
+    margin: 0 0 10px;
     font-size: 20px;
+}
+
+fieldset + fieldset {
     margin-top: 10px;
 }
 
