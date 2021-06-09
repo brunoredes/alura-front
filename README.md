@@ -7,53 +7,5 @@ Estudos sobre front-end, feitos na [Alura cursos](https://alura.com.br)
 
 >## Sobre o projeto
 O projeto se chama "Barbearia Alura", onde foi desenvolvido um site, utilizando as tecnologias HTML e CSS.
-
->## Tecnologias Utilizadas e suas propriedades
-### HTML 5
-- !DOCTYPE: 
-  ```html
-  <!DOCTYPE>
-  ```
-- Ancora: 
-  ```html
-  <a></a>
-  ```
-- Div: 
-  ```html
-  <div></div>
-  ```
-- Parágrafo:
-  ```html
-  <p></p>
-  ```
-- Imagem:
-  ```html
-  <img/>
-  ```
-- Navegação:
-  ```html
-  <nav></nav>
-  ```
-- Lista Não Ordenada:
-  ```html
-  <ul></ul>
-  ```
-- Cabeçalho:
-  ```html
-  <header></header>
-  ```
-- Cabeçalho de seção:
-  ```html
-  <h1><h1> ~ <h6></h6>
-  ```
-
-### CSS 3
-- Background Color:
-  ```css
-    background-color
-  ```
-- 
--
--
--
--
+Neste projeto, por não abordar o CSS3 com uso de FlexBox e Grid Layout, foi usado display Inline e Inline block (apesar de eu ter colocado grid e flexbox).
+Também foram abordados nesse projeto: Uso de tags, semântica para cada caso, espaçamento interno e externo, alinhamento de texto, posições, bordas, pseudo classes e pseudo elementos CSS, hierarquia CSS, seletores css com ">", "~", "+", Fontes externas, calculos com css, sombras e media queries.
